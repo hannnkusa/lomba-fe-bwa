@@ -1,0 +1,28 @@
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: "../font/Poppins/Poppins-Regular.ttf" format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../font/Poppins/Poppins-Medium.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../font/Poppins/Poppins-SemiBold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  src: url("../font/Nunito/Nunito-ExtraBold.ttf") format('truetype');
+}

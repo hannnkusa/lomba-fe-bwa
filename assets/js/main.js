@@ -1,9 +1,3 @@
-/**
-* Template Name: BizLand - v3.8.1
-* Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -81,21 +75,34 @@
   /**
    * Header fixed top on scroll
    */
+  // let selectHeader = select('#header')
+  // if (selectHeader) {
+  //   let headerOffset = selectHeader.offsetTop
+  //   let nextElement = selectHeader.nextElementSibling
+  //   const headerFixed = () => {
+  //     if ((headerOffset - window.scrollY) <= 0) {
+  //       selectHeader.classList.add('fixed-top')
+  //       nextElement.classList.add('scrolled-offset')
+  //     } else {
+  //       selectHeader.classList.remove('fixed-top')
+  //       nextElement.classList.remove('scrolled-offset')
+  //     }
+  //   }
+  //   window.addEventListener('load', headerFixed)
+  //   onscroll(document, headerFixed)
+  // }
+
   let selectHeader = select('#header')
   if (selectHeader) {
-    let headerOffset = selectHeader.offsetTop
-    let nextElement = selectHeader.nextElementSibling
-    const headerFixed = () => {
-      if ((headerOffset - window.scrollY) <= 0) {
-        selectHeader.classList.add('fixed-top')
-        nextElement.classList.add('scrolled-offset')
+    const headerScrolled = () => {
+      if (window.scrollY > 100) {
+        selectHeader.classList.add('header-scrolled')
       } else {
-        selectHeader.classList.remove('fixed-top')
-        nextElement.classList.remove('scrolled-offset')
+        selectHeader.classList.remove('header-scrolled')
       }
     }
-    window.addEventListener('load', headerFixed)
-    onscroll(document, headerFixed)
+    window.addEventListener('load', headerScrolled)
+    onscroll(document, headerScrolled)
   }
 
   /**
