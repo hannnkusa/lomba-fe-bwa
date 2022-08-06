@@ -95,7 +95,7 @@
   let selectHeader = select('#header')
   if (selectHeader) {
     const headerScrolled = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 60) {
         selectHeader.classList.add('header-scrolled')
       } else {
         selectHeader.classList.remove('header-scrolled')
@@ -206,13 +206,14 @@
   /**
    * Testimonials slider
    */
-  new Swiper('.testimonials-slider', {
+  new Swiper('.ads-slider', {
     speed: 600,
     loop: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
     },
+    spaceBetween: 20,
     slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination',
