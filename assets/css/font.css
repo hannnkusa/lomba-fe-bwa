@@ -3,14 +3,14 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  src: "../font/Poppins/Poppins-Regular.ttf" format('truetype');
+  src: "../font/Poppins/Poppins-Light.ttf" format('truetype');
 }
 
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
-  src: url("../font/Poppins/Poppins-Medium.ttf") format('truetype');
+  src: url("../font/Poppins/Poppins-Regular.ttf") format('truetype');
 }
 
 @font-face {
